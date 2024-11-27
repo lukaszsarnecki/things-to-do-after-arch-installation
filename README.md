@@ -20,3 +20,27 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
 fi
 ```
 Logout and login again
+
+## Install yay and paru
+
+### YAY
+```bash
+pacman -S --needed git base-devel
+```
+```bash
+git clone https://aur.archlinux.org/yay.git
+```
+```bash
+cd yay && makepkg -si
+```
+### PARU
+```bash
+pacman -S --needed git base-devel
+```
+```bash
+git clone https://aur.archlinux.org/paru
+```
+```bash
+cd yay && makepkg -si
+```
+
