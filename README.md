@@ -1,23 +1,22 @@
 # Things to do after arch installation
 
-Wiele dystrybucji Linuksa ma domyślnie włączoną funkcję autouzupełniania w Bashu. Jeśli jednak z jakiegoś powodu autouzupełnianie nie działa, możesz je włączyć ręcznie.
+## Enable autocmplete in bash
 
-Upewnij się, że masz zainstalowane narzędzie bash-completion:
+### Install bash-completion
 
-bash-completion to pakiet, który rozszerza funkcje autouzupełniania w Bashu. Jest on dostępny w większości dystrybucji Linuksa.
-
+```bash
 sudo pacman -S bash-completion
+```
+### Add the following code to the ~/.bashrc file:
 
-Aktywacja bash-completion:
+```bash
+vim .bashrc
+```
 
-W większości dystrybucji Bash automatycznie ładuje bash-completion. Jeśli jednak musisz to zrobić ręcznie, dodaj poniższy kod do pliku ~/.bashrc:
-
-bash
-Skopiuj kod
-# Włącz autouzupełnianie w Bashu
-if ! shopt -oq posix; then
-    # Włącz bash-completion
-    source /etc/bash_completion
+```bash
+# Enable autocomplete in bash
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
 fi
-
-source ~/.bashrc
+```
+Logout and login again
