@@ -58,7 +58,6 @@ ParalleDownloads = 5
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 ```
-```
 
 
 
