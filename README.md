@@ -66,7 +66,7 @@ sudo pacman -S power-profiles-daemon
 ```bash
 sudo vim /etc/gdm/custom.conf
 ```
-And change ''#WaylandEnable=false'' to ''WaylandEnable=true''
+And change **#WaylandEnable=false** to **WaylandEnable=true**
 
 
 
