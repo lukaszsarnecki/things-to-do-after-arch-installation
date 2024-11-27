@@ -62,3 +62,11 @@ Include = /etc/pacman.d/mirrorlist
 ```bash
 sudo pacman -S power-profiles-daemon
 ```
+## Enable wayland in gdm
+```bash
+sudo vim /etc/gdm/custom.conf
+```
+And change ''#WaylandEnable=false'' to ''WaylandEnable=true''
+
+
+
