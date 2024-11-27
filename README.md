@@ -58,6 +58,7 @@ ParalleDownloads = 5
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 ```
-
-
-
+## Power Profiles Deamon Installation 
+```bash
+sudo pacman -S power-profiles-daemon
+```
