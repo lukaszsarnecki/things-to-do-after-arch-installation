@@ -43,4 +43,22 @@ git clone https://aur.archlinux.org/paru
 ```bash
 cd yay && makepkg -si
 ```
+## Pacman configuration
+```bash
+sudo vim /etc/pacman.conf
+```
+And uncomment
+```
+Color
+```
+```
+ParalleDownloads = 5
+```
+```
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+```
+```
+
+
 
