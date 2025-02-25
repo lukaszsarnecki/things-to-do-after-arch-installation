@@ -67,6 +67,12 @@ sudo pacman -S power-profiles-daemon
 sudo vim /etc/gdm/custom.conf
 ```
 And change **#WaylandEnable=false** to **WaylandEnable=true**
-
+## Remove some unnecessary apps
+```bash
+sudo rm -Rf org.gnome.Extensions.desktop qv4l2.desktop qvidcap.desktop bvnc.desktop bssh.desktop avahi-discover.desktop
+```
+```bash
+sudo pacman -R epiphany
+```
 
 
