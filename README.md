@@ -72,7 +72,7 @@ And change **#WaylandEnable=false** to **WaylandEnable=true**
 sudo rm -Rf org.gnome.Extensions.desktop qv4l2.desktop qvidcap.desktop bvnc.desktop bssh.desktop avahi-discover.desktop
 ```
 ```bash
-sudo pacman -R epiphany
+sudo pacman -R epiphany vim
 ```
 
 
