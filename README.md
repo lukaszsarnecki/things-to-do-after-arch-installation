@@ -25,7 +25,7 @@ Logout and login again
 
 ### YAY
 ```bash
-pacman -S --needed git base-devel
+sudo pacman -S --needed git base-devel
 ```
 ```bash
 git clone https://aur.archlinux.org/yay.git
@@ -35,13 +35,13 @@ cd yay && makepkg -si
 ```
 ### PARU
 ```bash
-pacman -S --needed git base-devel
+sudo pacman -S --needed git base-devel
 ```
 ```bash
 git clone https://aur.archlinux.org/paru
 ```
 ```bash
-cd yay && makepkg -si
+cd paru && makepkg -si
 ```
 ## Pacman configuration
 ```bash
